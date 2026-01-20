@@ -1,0 +1,19 @@
+# Python sanal ortamları
+venv/
+.venv/
+env/
+
+# Ortam değişkenleri (Şifreler)
+.env
+
+# Python önbellek dosyaları
+__pycache__/
+*.pyc
+
+# İşletim sistemi dosyaları
+.DS_Store
+Thumbs.db
+
+# IDE klasörleri
+.vscode/
+.idea/
