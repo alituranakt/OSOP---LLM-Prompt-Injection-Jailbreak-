@@ -86,8 +86,8 @@ LLM-Vulnerability-Engineer/
 ### Adım 1: Repository'yi Klonlama
 
 ```bash
-git clone https://github.com/[username]/llm-vulnerability-engineer.git
-cd llm-vulnerability-engineer
+git clone https://github.com/alituranakt/OSOP---LLM-Prompt-Injection-Jailbreak-
+cd OSOP---LLM-Prompt-Injection-Jailbreak-
 ```
 
 ### Adım 2: Sanal Ortam Oluşturma
