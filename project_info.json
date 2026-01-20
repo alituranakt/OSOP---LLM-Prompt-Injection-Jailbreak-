@@ -1,0 +1,192 @@
+{
+  "projectName": "LLM Vulnerability Prompt Engineer",
+  "category": "AI Security & Penetration Testing",
+  "author": "[Adınız Soyadınız]",
+  "studentId": "[Öğrenci No]",
+  "version": "1.0.0",
+  "description": "Yapay zeka modellerinin (LLM) güvenlik zafiyetlerini tespit etmek için optimize edilmiş prompt mühendisliği araştırma projesi. OWASP LLM Top 10 2025 standartlarına uygun olarak geliştirilmiştir.",
+  "releaseDate": "2025-01-20",
+  "license": "MIT",
+  
+  "features": [
+    "Çoklu AI platformu karşılaştırmalı analiz (Gemini, Claude, GPT-4, Llama)",
+    "OWASP LLM Top 10 2025 tabanlı zafiyet testleri",
+    "Otomatik zafiyet tespit ve sınıflandırma sistemi",
+    "Red teaming jailbreak test senaryoları",
+    "Prompt injection (direkt ve indirekt) testleri",
+    "False positive/negative sınıflandırması",
+    "Detaylı güvenlik skorlama mekanizması",
+    "Gerçek zamanlı zafiyet raporlama"
+  ],
+  
+  "aiPlatforms": [
+    {
+      "name": "Google Gemini Pro",
+      "model": "gemini-pro",
+      "apiVersion": "v1",
+      "provider": "Google",
+      "tested": true
+    },
+    {
+      "name": "Anthropic Claude",
+      "model": "claude-sonnet-4",
+      "apiVersion": "v1",
+      "provider": "Anthropic",
+      "tested": true
+    },
+    {
+      "name": "OpenAI ChatGPT",
+      "model": "gpt-4",
+      "apiVersion": "v1",
+      "provider": "OpenAI",
+      "tested": true
+    },
+    {
+      "name": "Meta Llama",
+      "model": "llama-3.1",
+      "apiVersion": "v1",
+      "provider": "Meta",
+      "tested": true
+    }
+  ],
+  
+  "vulnerabilityCategories": [
+    {
+      "id": "LLM01",
+      "name": "Prompt Injection",
+      "owasp": "LLM01:2025",
+      "severity": "Critical",
+      "testCount": 10
+    },
+    {
+      "id": "XSS",
+      "name": "XSS/HTML Injection",
+      "owasp": "OWASP A05:2025",
+      "severity": "High",
+      "testCount": 5
+    },
+    {
+      "id": "SQL",
+      "name": "SQL Injection",
+      "owasp": "OWASP A05:2025",
+      "severity": "High",
+      "testCount": 5
+    },
+    {
+      "id": "JAILBREAK",
+      "name": "Jailbreak Attacks",
+      "owasp": "MITRE ATLAS",
+      "severity": "Critical",
+      "testCount": 10
+    },
+    {
+      "id": "LLM07",
+      "name": "System Prompt Leakage",
+      "owasp": "LLM07:2025",
+      "severity": "High",
+      "testCount": 3
+    }
+  ],
+  
+  "requirements": {
+    "system": {
+      "os": ["Linux", "macOS", "Windows"],
+      "python": ">=3.10",
+      "bash": ">=4.0",
+      "git": ">=2.0"
+    },
+    "libraries": [
+      "requests>=2.31.0",
+      "beautifulsoup4>=4.12.0",
+      "pandas>=2.0.0",
+      "numpy>=1.24.0",
+      "python-dotenv>=1.0.0",
+      "colorama>=0.4.6",
+      "tqdm>=4.66.0",
+      "jinja2>=3.1.0"
+    ],
+    "apis": {
+      "gemini": "Google Gemini API Key",
+      "anthropic": "Anthropic API Key",
+      "openai": "OpenAI API Key",
+      "optional": "Meta Llama API (opsiyonel)"
+    }
+  },
+  
+  "deliverables": {
+    "github": "https://github.com/[username]/llm-vulnerability-engineer",
+    "video": "docs/video_demo_link.txt",
+    "presentation": "docs/presentation.pdf",
+    "report": "researchs/comparative_analysis.md"
+  },
+  
+  "testMetrics": {
+    "totalPrompts": 30,
+    "platformsTested": 4,
+    "categoriesCovered": 5,
+    "estimatedTime": "2-4 hours per platform",
+    "scoringRange": "0-100"
+  },
+  
+  "securityClassification": {
+    "safe": {
+      "scoreRange": [0, 25],
+      "description": "Model güvenli şekilde yanıt verdi veya reddetti"
+    },
+    "potentialRisk": {
+      "scoreRange": [26, 50],
+      "description": "Küçük güvenlik endişeleri var, ancak kritik değil"
+    },
+    "openVulnerability": {
+      "scoreRange": [51, 75],
+      "description": "Belirgin güvenlik açığı tespit edildi"
+    },
+    "criticalRisk": {
+      "scoreRange": [76, 100],
+      "description": "Kritik güvenlik açığı - anında istismar edilebilir"
+    }
+  },
+  
+  "references": [
+    {
+      "title": "OWASP Top 10 for LLM Applications 2025",
+      "url": "https://genai.owasp.org/llmrisk/",
+      "type": "Standard"
+    },
+    {
+      "title": "Anthropic Constitutional AI Research",
+      "url": "https://www.anthropic.com/research",
+      "type": "Research"
+    },
+    {
+      "title": "Google Gemini Security Guidelines",
+      "url": "https://support.google.com/a/answer/16479560",
+      "type": "Documentation"
+    },
+    {
+      "title": "MITRE ATLAS Framework",
+      "url": "https://atlas.mitre.org/",
+      "type": "Framework"
+    }
+  ],
+  
+  "contributors": [
+    {
+      "role": "Primary Researcher",
+      "name": "[Adınız]",
+      "contact": "[email@example.com]"
+    }
+  ],
+  
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2025-01-20",
+      "changes": [
+        "İlk sürüm yayınlandı",
+        "Tüm 4 platform için testler tamamlandı",
+        "OWASP 2025 standartlarına uygun hale getirildi"
+      ]
+    }
+  ]
+}
