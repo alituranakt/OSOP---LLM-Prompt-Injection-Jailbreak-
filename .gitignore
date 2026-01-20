@@ -1,19 +1,103 @@
-# Python sanal ortamları
-venv/
-.venv/
-env/
-
-# Ortam değişkenleri (Şifreler)
-.env
-
-# Python önbellek dosyaları
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
 
-# İşletim sistemi dosyaları
+# API Keys and Secrets
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+secrets/
+credentials/
+
+# Test Results and Logs
+results/raw_responses/
+results/classified_results/
+results/logs/
+*.log
+test-results/
+coverage/
+.coverage
+.pytest_cache/
+htmlcov/
+
+# IDE and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 .DS_Store
 Thumbs.db
 
-# IDE klasörleri
-.vscode/
-.idea/
+# Documentation Build
+docs/_build/
+docs/.doctrees/
+site/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+
+# Temporary Files
+*.tmp
+*.bak
+*.swp
+~*
+.#*
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# Project Specific
+/output/
+/temp/
+/cache/
+*.sqlite
+*.db
+
+# Large Data Files (optional)
+*.csv
+*.xlsx
+*.parquet
+
+# Sensitive Research Data
+chat_history/
+api_responses/
+leaked_prompts/
+
+# Backup Files
+*.backup
+*.old
+backup/
